@@ -1,0 +1,16 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Klea Kalemi
+N:Kalemi;Klea;;;
+item1.EMAIL;TYPE=INTERNET:klea.kalemi@symbioticsgroup.com
+item1.X-ABLabel:
+TEL;TYPE=WORK:+41 (0)22 566 58 00
+TEL;TYPE=CELL:078 616 36 98
+ORG:Symbiotics Group SA
+TITLE:Project & Proposal Manager
+item2.URL:https\://www.linkedin.com/in/klea-kalemi/
+item2.X-ABLabel:PROFILE
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzELmeSOCF3r2R63_0yYs2
+ sDjYIWPmYxBhRhL8_KKzQpnL6I40at
+CATEGORIES:myContacts
+END:VCARD
