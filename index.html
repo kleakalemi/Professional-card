@@ -5,9 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Klea Kalemi | Contact</title>
+  <title>Klea Kalemi | Symbiotics Group SA</title>
 
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500&display=swap');
+
     * {
       box-sizing: border-box;
     }
@@ -15,154 +17,241 @@
     body {
       margin: 0;
       min-height: 100vh;
+
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 24px;
 
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-                   Roboto, Helvetica, Arial, sans-serif;
+      padding: 40px 20px;
 
-      background: linear-gradient(135deg, #f4f7f9, #e8eef2);
-      color: #24313a;
+      background: #f5f4f1;
+      color: #1d2529;
+
+      font-family: "Inter", -apple-system, BlinkMacSystemFont,
+                   "Segoe UI", sans-serif;
     }
 
     .card {
+      position: relative;
+
       width: 100%;
-      max-width: 480px;
-      background: #ffffff;
-      border-radius: 18px;
-      padding: 48px 40px;
-      text-align: center;
+      max-width: 520px;
+
+      padding: 58px 56px 50px;
+
+      background: #fbfaf7;
+
+      border: 1px solid #dedbd3;
 
       box-shadow:
-        0 20px 50px rgba(30, 50, 60, 0.12);
+        0 24px 60px rgba(25, 32, 35, 0.08);
     }
 
-    .initials {
-      width: 76px;
-      height: 76px;
-      margin: 0 auto 24px;
+    /* Subtle Swiss-style top rule */
+    .top-rule {
+      width: 100%;
+      height: 3px;
 
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      background: #b49a6a;
+    }
+
+    .monogram {
+      margin-bottom: 34px;
+
+      font-family: "Playfair Display", Georgia, serif;
+
+      font-size: 22px;
+      letter-spacing: 4px;
+
+      color: #263c45;
+    }
+
+    .name {
+      margin: 0;
+
+      font-family: "Playfair Display", Georgia, serif;
+
+      font-size: 42px;
+      line-height: 1.1;
+      font-weight: 500;
+
+      letter-spacing: -0.5px;
+
+      color: #182c34;
+    }
+
+    .role {
+      margin-top: 16px;
+
+      font-size: 13px;
+      font-weight: 600;
+
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+
+      color: #53636a;
+    }
+
+    .company {
+      margin-top: 8px;
+
+      font-size: 14px;
+      letter-spacing: 0.2px;
+
+      color: #7b817f;
+    }
+
+    .rule {
+      width: 100%;
+      height: 1px;
+
+      margin: 38px 0 30px;
+
+      border: 0;
+
+      background: #d9d5cc;
+    }
+
+    .details {
+      display: grid;
+      gap: 20px;
+    }
+
+    .detail-label {
+      margin-bottom: 5px;
+
+      font-size: 10px;
+      font-weight: 600;
+
+      text-transform: uppercase;
+      letter-spacing: 1.6px;
+
+      color: #9a927f;
+    }
+
+    .detail-value {
+      font-size: 14px;
+      line-height: 1.5;
+
+      color: #26383f;
+    }
+
+    .detail-value a {
+      color: inherit;
+      text-decoration: none;
+
+      border-bottom: 1px solid transparent;
+
+      transition:
+        color 0.2s ease,
+        border-color 0.2s ease;
+    }
+
+    .detail-value a:hover {
+      color: #9b8153;
+      border-bottom-color: #9b8153;
+    }
+
+    .actions {
+      display: grid;
+      gap: 10px;
+
+      margin-top: 38px;
+    }
+
+    .button {
       display: flex;
       align-items: center;
       justify-content: center;
 
-      border-radius: 50%;
-      background: #183b4a;
-      color: white;
+      min-height: 46px;
 
-      font-size: 24px;
+      padding: 12px 18px;
+
+      text-decoration: none;
+
+      font-size: 12px;
       font-weight: 600;
+
       letter-spacing: 1px;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: 28px;
-      font-weight: 600;
-      letter-spacing: -0.5px;
-      color: #183b4a;
-    }
-
-    .role {
-      margin-top: 10px;
-      font-size: 16px;
-      color: #53636c;
-      font-weight: 500;
-    }
-
-    .company {
-      margin-top: 4px;
-      font-size: 15px;
-      color: #7a878e;
-    }
-
-    .divider {
-      width: 50px;
-      height: 2px;
-      margin: 28px auto;
-      background: #d4a574;
-      border: 0;
-    }
-
-    .contact {
-      margin: 0;
-      font-size: 15px;
-      line-height: 1.8;
-    }
-
-    .contact a {
-      color: #183b4a;
-      text-decoration: none;
-      transition: color 0.2s ease;
-    }
-
-    .contact a:hover {
-      color: #b47742;
-    }
-
-    .buttons {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      margin-top: 30px;
-    }
-
-    .button {
-      display: block;
-      padding: 13px 20px;
-      border-radius: 9px;
-
-      font-size: 15px;
-      font-weight: 600;
-      text-decoration: none;
+      text-transform: uppercase;
 
       transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease,
-        background 0.2s ease;
+        background 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
     }
 
     .button:hover {
-      transform: translateY(-2px);
+      transform: translateY(-1px);
     }
 
-    .linkedin {
-      background: #183b4a;
-      color: white;
-      box-shadow: 0 5px 15px rgba(24, 59, 74, 0.18);
+    .primary {
+      background: #263c45;
+      color: #ffffff;
     }
 
-    .linkedin:hover {
-      background: #24566b;
-      color: white;
-      box-shadow: 0 8px 20px rgba(24, 59, 74, 0.25);
+    .primary:hover {
+      background: #344f59;
+      color: #ffffff;
     }
 
-    .contacts {
-      background: #f3f5f6;
-      color: #183b4a;
+    .secondary {
+      border: 1px solid #c9c5bb;
+      color: #263c45;
+      background: transparent;
     }
 
-    .contacts:hover {
-      background: #e7ebed;
-      color: #183b4a;
+    .secondary:hover {
+      border-color: #9b8153;
+      color: #9b8153;
+      background: #faf8f3;
     }
 
     .footer {
-      margin-top: 28px;
-      font-size: 12px;
-      color: #9aa4a9;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      margin-top: 42px;
+      padding-top: 18px;
+
+      border-top: 1px solid #e1ded7;
+
+      font-size: 10px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+
+      color: #aaa69d;
     }
 
-    @media (max-width: 500px) {
-      .card {
-        padding: 38px 25px;
+    .swiss-mark {
+      font-size: 11px;
+      letter-spacing: 2px;
+      color: #9b8153;
+    }
+
+    @media (max-width: 560px) {
+      body {
+        padding: 20px 14px;
       }
 
-      h1 {
-        font-size: 25px;
+      .card {
+        padding: 44px 28px 38px;
+      }
+
+      .name {
+        font-size: 35px;
+      }
+
+      .footer {
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
       }
     }
   </style>
@@ -172,9 +261,11 @@
 
   <main class="card">
 
-    <div class="initials">KK</div>
+    <div class="top-rule"></div>
 
-    <h1>Klea Kalemi</h1>
+    <div class="monogram">KK</div>
+
+    <h1 class="name">Klea Kalemi</h1>
 
     <div class="role">
       Project &amp; Proposal Manager
@@ -184,28 +275,34 @@
       Symbiotics Group SA
     </div>
 
-    <hr class="divider">
+    <hr class="rule">
 
-    <div class="contact">
+    <section class="details">
 
       <div>
-        <a href="mailto:klea.kalemi@symbioticsgroup.com">
-          klea.kalemi@symbioticsgroup.com
-        </a>
+        <div class="detail-label">Email</div>
+        <div class="detail-value">
+          <a href="mailto:klea.kalemi@symbioticsgroup.com">
+            klea.kalemi@symbioticsgroup.com
+          </a>
+        </div>
       </div>
 
       <div>
-        <a href="tel:+41225665800">
-          +41 (0)22 566 58 00
-        </a>
+        <div class="detail-label">Telephone</div>
+        <div class="detail-value">
+          <a href="tel:+41225665800">
+            +41 (0)22 566 58 00
+          </a>
+        </div>
       </div>
 
-    </div>
+    </section>
 
-    <div class="buttons">
+    <div class="actions">
 
       <a
-        class="button linkedin"
+        class="button primary"
         href="https://www.linkedin.com/in/klea-kalemi/"
         target="_blank"
         rel="noopener noreferrer">
@@ -213,7 +310,7 @@
       </a>
 
       <a
-        class="button contacts"
+        class="button secondary"
         href="contact.vcf"
         download>
         Add to Contacts
@@ -222,7 +319,8 @@
     </div>
 
     <div class="footer">
-      Symbiotics Group SA
+      <span>Symbiotics Group SA</span>
+      <span class="swiss-mark">CH · 2026</span>
     </div>
 
   </main>
